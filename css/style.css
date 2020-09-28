@@ -27,10 +27,32 @@ h1{
   line-height: 1.5;
   letter-spacing: -0.02rem;
   color: white;
+  margin:0;
 }
 
 h1 strong{
   color: #026fff;
+}
+
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 2.4rem;
+  margin-bottom: 4rem;
+}
+
+ol,
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size:1.5brem;
+}
+
+figure{
+  margin: 0;
 }
 
 .hero{
@@ -40,17 +62,45 @@ h1 strong{
   font-size: 50rem 30rem;
   background-repeat: no-repeat;
   background-position-x: right;
+  display: flex;
+  align-items: center;
 }
 
 .portfolio{
   background: #fafafa;
+  padding: 2rem;
 }
 
 .project{
   border: 0.1rem solid gray;
   border-radius: 1rem;
   margin: 1.5rem;
+  padding: 2rem;
   background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-course,
+.project-date,
+.project-url{
+  margin: 1rem 0;
+  font-size: 1.6rem;
+}
+
+.project-description{
+  font-size: 2rem;
+}
+
+.project strong{
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.project-title{
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .project-details{
@@ -65,9 +115,45 @@ h1 strong{
 
 .header{
   background-color: #1b2127;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 9rem;
 }
 
 .header a{
+  color: white;
+  text-decoration: none;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+.menu{
+  height: inherit;
+}
+.menu .link{
+  font-size: 1.7rem;
+}
+.header ol{
+  display: flex;
+  height: inherit;
+}
+.header ol li{
+  height: inherit;
+}
+
+.footer{
+  padding: 1.5rem;
+  color: white;
+  background-color: #1b2127;
+  display: flex;
+  justify-content: space-between;
+}
+.footer p{
+  font-size: 2rem;
+}
+.footer  a{
   color: white;
   text-decoration: none;
 }
