@@ -1,0 +1,73 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
+
+h1{
+  font-size: 4rem;
+  line-height: 1.5;
+  letter-spacing: -0.02rem;
+  color: white;
+}
+
+h1 strong{
+  color: #026fff;
+}
+
+.hero{
+  height: 30rem;
+  background-image: url('../images/jhanpiere.png');
+  background-color: #1b2127;
+  font-size: 50rem 30rem;
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+
+.portfolio{
+  background: #fafafa;
+}
+
+.project{
+  border: 0.1rem solid gray;
+  border-radius: 1rem;
+  margin: 1.5rem;
+  background: white;
+}
+
+.project-details{
+  width: 50%;
+  margin: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 2rem;
+}
+.project-imageContainer{
+  width: 50%;
+}
+
+.header{
+  background-color: #1b2127;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
+}
