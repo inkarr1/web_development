@@ -57,13 +57,18 @@ figure{
 
 .hero{
   height: 30rem;
-  background-image: url('../images/jhanpiere.png');
+  /* background-image: url('../images/jhanpiere.png'); */
   background-color: #1b2127;
-  font-size: 50rem 30rem;
-  background-repeat: no-repeat;
-  background-position-x: right;
+  /* font-size: 50rem 30rem; */
+  /* background-repeat: no-repeat */;
+  /* background-position-x: right; */
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.hero-image{
+  object-fit: cover;
 }
 
 .portfolio{
@@ -113,6 +118,12 @@ figure{
   width: 50%;
 }
 
+.project-image{
+  width: 100%;
+  border-radius: 1rem;
+  border: 0.1rem solid #f4fbff;
+}
+
 .header{
   background-color: #1b2127;
   color: white;
@@ -143,6 +154,112 @@ figure{
   height: inherit;
 }
 
+.event-list-title{
+  margin-left: 2rem;
+}
+
+.event-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.event{
+  margin: 1rem;
+  width: 48rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #f4fbff;
+}
+
+.event img{
+  width: 48rem;
+  height: 20rem;
+  object-fit: cover;
+}
+
+.event-detail{
+  margin: 2rem 4rem;
+  margin-top: -4rem;
+  background-color: white;
+  position: relative;
+  padding: 2rem;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-bottom: 1rem;
+}
+
+.event-description{
+  text-align: left;
+}
+
+.event-url{
+  border: 0.1rem solid #056fff;
+  padding:0.5rem 2em;
+  text-decoration: none;
+  color: #056fff;
+  border-radius: 0.5rem;
+}
+
+.contact{
+  background-color: #026fff;
+  color: white;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social-link{
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 1rem;
+  background-size: 5rem 5rem;
+}
+
+.social-link.twitter{
+  background-image: url('../images/twitter.svg');
+}
+
+.social-link.facebook{
+  background-image: url('../images/facebook.svg');
+}
+
+.social-link.github{
+  background-image: url('../images/github.svg');
+}
+
+.social-link.instagram{
+  background-image: url('../images/instagram.svg');
+}
+
+.form-email input{
+  border-color: gray;
+  border-style: solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem 1rem 2.5rem;
+  background-image: url('../images/envelope.svg');
+  background-size: 2rem 2rem;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 0.5rem;
+}
+
+.form-email button{
+  display: block;
+  background: transparent;
+  color: white;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  width: 10rem;
+  margin-top: 1rem;
+}
+
+.form-email h3{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .footer{
   padding: 1.5rem;
   color: white;
@@ -156,4 +273,15 @@ figure{
 .footer  a{
   color: white;
   text-decoration: none;
+}
+
+.container{
+  border: 0.1rem solid red;
+  width: 100rem;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
 }
