@@ -154,6 +154,17 @@ figure{
   height: inherit;
 }
 
+.container{
+  border: 0.1rem solid red;
+  width: 100rem;
+  margin: 0 auto;
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  flex-wrap: inherit;
+}
+
 .event-list-title{
   margin-left: 2rem;
 }
@@ -165,14 +176,14 @@ figure{
 
 .event{
   margin: 1rem;
-  width: 48rem;
+  width: 47rem;
   flex-shrink: 0;
   border-radius: 1rem;
   overflow: hidden;
   background: #f4fbff;
 }
 
-.event img{
+.event-image{
   width: 48rem;
   height: 20rem;
   object-fit: cover;
@@ -194,10 +205,10 @@ figure{
 }
 
 .event-url{
-  border: 0.1rem solid #056fff;
+  color: #056fff;
+  border: 0.1rem solid;
   padding:0.5rem 2em;
   text-decoration: none;
-  color: #056fff;
   border-radius: 0.5rem;
 }
 
@@ -273,15 +284,4 @@ figure{
 .footer  a{
   color: white;
   text-decoration: none;
-}
-
-.container{
-  border: 0.1rem solid red;
-  width: 100rem;
-  margin: 0 auto;
-  display: inherit;
-  justify-content: inherit;
-  align-items: inherit;
-  height: inherit;
-  flex-wrap: inherit;
 }
