@@ -65,6 +65,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .hero-image{
@@ -85,6 +86,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .project-course,
@@ -110,10 +112,8 @@ figure{
 
 .project-details{
   width: 50%;
-  margin: 1rem;
-  margin-bottom: 1.5rem;
-  padding: 2rem;
 }
+
 .project-imageContainer{
   width: 50%;
 }
@@ -124,12 +124,18 @@ figure{
   border: 0.1rem solid #f4fbff;
 }
 
+.project-imageContainer img{
+  max-width: 100%;
+}
+
 .header{
   background-color: #1b2127;
   color: white;
   display: flex;
+  height: 7rem;
+  align-items: center;
   justify-content: space-between;
-  height: 9rem;
+  flex-wrap: wrap;
 }
 
 .header a{
@@ -156,7 +162,8 @@ figure{
 
 .container{
   border: 0.1rem solid red;
-  width: 100rem;
+  max-width: 100rem;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   justify-content: inherit;
@@ -175,8 +182,8 @@ figure{
 }
 
 .event{
-  margin: 1rem;
-  width: 47rem;
+  margin: 1%;
+  width: 48%;
   flex-shrink: 0;
   border-radius: 1rem;
   overflow: hidden;
@@ -219,6 +226,7 @@ figure{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-link{
@@ -277,6 +285,7 @@ figure{
   background-color: #1b2127;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .footer p{
   font-size: 2rem;
