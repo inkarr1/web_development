@@ -5,3 +5,24 @@
 .event-detail{
   margin: 1rem 1rem 1rem 1rem;
 }
+
+.contact{
+  height: auto;
+  padding: 1.6rem 0;
+  text-align: center;
+  display: block;
+}
+
+.form-email button{
+  margin: 1rem auto;
+}
+
+.form-email h3{
+  margin-top: 0;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  border: 1px solid transparent;
+}

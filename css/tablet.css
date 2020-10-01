@@ -1,3 +1,29 @@
+.container{
+  /* padding: 0 1.6rem; */
+}
+
+.hero{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.hero-image{
+  position: absolute;
+  z-index: 1;
+}
+
+h1{
+  font-size: 3.2rem;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
 .header{
   display:block;
   height: auto;
