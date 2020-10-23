@@ -310,9 +310,35 @@ a{
 }
 
 @media screen and (max-width:1024px){
-  .container{
-    padding: 0 1em;
+.container{
+  padding: 0 1em;
 }
+.hero{
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 4em 2em;
+}
+.hero-image{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+h1{
+  font-size: 1.5em;
+  z-index: 2;
+}
+
+}
+
+.html-video{
+  width: 100%;
+  height: auto;
+  /* max-width: 100%; */
 }
 
 @media screen and (max-width:767px){
@@ -376,6 +402,9 @@ a{
 }
 
 @media screen and (max-width:480px){
+  h1{
+    font-size: 1.5em;
+  }
   .project-details{
     font-size: 12px;
   }
@@ -405,5 +434,11 @@ a{
 }
 
 @media screen and (max-width:320px){
-
+  h1{
+    font-size: 1.2em;
+    /* background: rgba(0, 0, 0, 0.5); */
+  }
+  .hero{
+    padding: 2em 1em;
+  }
 }
