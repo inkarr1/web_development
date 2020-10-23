@@ -36,11 +36,11 @@ html{
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter-square:before {
-  content: "\e900";
-}
 .icon-menu:before {
   content: "\e9bd";
+}
+/* .icon-twitter-square:before {
+  content: "\e900";
 }
 .icon-facebook2:before {
   content: "\ea91";
@@ -50,7 +50,7 @@ html{
 }
 .icon-github:before {
   content: "\eab0";
-}
+} */
 
 body{
   font-family: 'Source Sans Pro', sans-serif;
@@ -293,13 +293,14 @@ a{
   height: 50px;
   margin: 0 10px;
   background-size: 50px 50px;
+  color: #EDEDED;
 }
 
-/* .social-link.twitter{
+.social-link.twitter{
   background-image: url('../images/twitter.svg');
-} */
+}
 
-/* .social-link.facebook{
+.social-link.facebook{
   background-image: url('../images/facebook.svg');
 }
 
@@ -309,7 +310,7 @@ a{
 
 .social-link.instagram{
   background-image: url('../images/instagram.svg');
-} */
+}
 
 .form-email input{
   border-color: gray;
@@ -357,10 +358,15 @@ a{
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: #1F2943;
-  display: block;
+  background-color: rgb(31, 41, 67, 0.9);
+  display: none;
   line-height: 40px;
   text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: #EDEDED;
 }
 
 @media screen and (max-width:1024px){
@@ -408,6 +414,9 @@ h1{
   position: relative;
 }
 @media screen and (max-width:767px){
+  .burger-button{
+    display: block;
+  }
   .header{
     display: block;
     height: auto;
@@ -420,10 +429,33 @@ h1{
   }
   .header a{
     justify-content: center;
+    height: 40px;
+    font-size: 2em;
+    text-decoration: underline;
+    margin-bottom: 0.5em;
   }
   .header .logo{
     text-align: center;
     padding-top: 0.5em;
+  }
+
+  .menu{
+    position: fixed;
+    background: rgb(105, 134, 177, 0.9);
+    z-index: 3;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    /* height: 100vh; */
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+  }
+
+  .menu.is-active{
+    left: 0;
   }
   .project{
     display: block;

@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-    <span class="icon-menu burger-button"></span>
+    <span class="icon-menu burger-button" id="burger-menu"></span>
     <header class="header">
       <div class="container">
         <figure class="logo">
@@ -144,6 +144,32 @@
         <div>
           <p>Design with 🧡 by <a href="https://twitter.com/JhanpiereMontes" target="_blank">@JhanpiereMontes</a></p>
         </div>
+        <script>
+          const ipad = window.matchMedia('screen and (max-width: 767px');
+          const menu = document.querySelector('.menu');
+          //console.log(menu);
+          const burgerButton = document.querySelector('#burger-menu');
+          //console.log(burgerButton);
+
+          ipad.addEventListener(validation)
+
+          function validation(event){
+          if(event.matches) {
+            burgerButton.addEventListener('click', hideShow)
+            }else{
+              burgerButton.removeEventListener('click', hideShow)
+            }
+          }
+
+          function hideShow() {
+            if(menu.classList.contains('is-active')){
+              menu.classList.remove('is-active');
+            }else{
+            menu.classList.add('is-active');
+            }
+          }
+
+        </script>
       </div>
     </footer>
   </body>
