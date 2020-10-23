@@ -357,6 +357,7 @@ h1{
   }
   .header .logo{
     text-align: center;
+    padding-top: 1em;
   }
   .project{
     display: block;
